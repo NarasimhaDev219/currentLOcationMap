@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/second_button_id"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Location" />
+    <Button
+        android:id="@+id/services_button_id"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Services Example" />
+
+    <Button
+        android:id="@+id/broadcast_button_id"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Services Example" />
+
+</LinearLayout>
