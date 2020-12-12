@@ -10,7 +10,7 @@ import com.example.currentlocationmap.Services.ServicesClass;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button second_button_id,services_button_id,broadcast_button_id;
+    Button second_button_id,services_button_id,broadcast_button_id,diections_button_id;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,10 +18,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
          second_button_id = findViewById(R.id.second_button_id);
          services_button_id = findViewById(R.id.services_button_id);
-        broadcast_button_id = findViewById(R.id.broadcast_button_id);
-        second_button_id.setOnClickListener(this);
-        services_button_id.setOnClickListener(this);
-        broadcast_button_id.setOnClickListener(this);
+         broadcast_button_id = findViewById(R.id.broadcast_button_id);
+        diections_button_id = findViewById(R.id.diections_button_id);
+         second_button_id.setOnClickListener(this);
+         services_button_id.setOnClickListener(this);
+         broadcast_button_id.setOnClickListener(this);
+        diections_button_id.setOnClickListener(this);
 
     }
 
@@ -33,8 +35,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }else if(view == services_button_id){
             Intent intent = new Intent(getApplicationContext(), ServicesClass.class);
             startActivity(intent);
-        }else if (view == services_button_id){
-
+        }else if (view == diections_button_id){
+            Intent intent = new Intent(getApplicationContext(),MapDirectionActivity.class);
+            startActivity(intent);
         }
     }
 }

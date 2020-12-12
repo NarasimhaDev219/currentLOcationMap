@@ -4,8 +4,9 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -20,6 +21,11 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCGs1ZT7FQpshDpgzrdIrEIlv9S1jmF-qY" />
 
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+        <activity android:name=".MapDirectionActivity"></activity>
         <activity android:name=".MyLocationClass"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
