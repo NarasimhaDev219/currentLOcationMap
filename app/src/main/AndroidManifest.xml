@@ -4,9 +4,11 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
@@ -15,18 +17,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CurrentLocationMap">
-        <activity android:name=".Services.ServicesClass"></activity>
+        <activity android:name=".PlacePicker.PlacePickerActivity"></activity>
+        <activity android:name=".CustomePlacePicker.CustomPlacePickerActivity" />
+        <activity android:name=".CarRootFindingMap" />
+        <activity android:name=".Services.ServicesClass" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCGs1ZT7FQpshDpgzrdIrEIlv9S1jmF-qY" />
-
-        <meta-data android:name="com.google.android.gms.version"
+        <meta-data
+            android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-
-        <activity android:name=".MapDirectionActivity"></activity>
-        <activity android:name=".MyLocationClass"></activity>
+        <activity android:name=".MapDirectionActivity" />
+        <activity android:name=".MyLocationClass" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,12 +39,12 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".Services.ServicesEx"/>
+        <service android:name=".Services.ServicesEx" />
 
         <receiver android:name=".Services.BodcastReciverEx.BrodCastReciverClass">
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"/>
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
         </receiver>
     </application>

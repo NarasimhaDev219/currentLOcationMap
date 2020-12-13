@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
     <Button
         android:id="@+id/second_button_id"
@@ -24,14 +29,6 @@
         android:layout_height="wrap_content"
         android:text="Services Example" />
 
-    <Button
-        android:id="@+id/broadcast_button_id"
-        android:layout_marginTop="50dp"
-        android:gravity="center"
-        android:layout_marginHorizontal="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Services Example" />
 
     <Button
         android:id="@+id/diections_button_id"
@@ -42,5 +39,33 @@
         android:layout_height="wrap_content"
         android:text="Directions" />
 
+    <Button
+        android:id="@+id/carAnimation_button_id"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Car Animation"/>
 
-</LinearLayout>
+    <Button
+        android:id="@+id/custome_picker_button_id"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CustomePlacePicker"/>
+
+    <Button
+        android:id="@+id/place_picker_button_id"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_marginBottom="50dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PlacePicker"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
