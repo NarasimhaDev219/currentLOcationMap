@@ -6,9 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.currentlocationmap.CurrentLocation.MyLocationClass;
 import com.example.currentlocationmap.CustomePlacePicker.CustomPlacePickerActivity;
 import com.example.currentlocationmap.PlacePicker.PlacePickerActivity;
+import com.example.currentlocationmap.RootFinding.CarRootFindingMap;
 import com.example.currentlocationmap.Services.ServicesClass;
+import com.example.currentlocationmap.TwoLocationsDirections.MapDirectionActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -44,10 +47,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent intent = new Intent(getApplicationContext(), ServicesClass.class);
             startActivity(intent);
         }else if (view == diections_button_id){
-            Intent intent = new Intent(getApplicationContext(),MapDirectionActivity.class);
+            Intent intent = new Intent(getApplicationContext(), MapDirectionActivity.class);
             startActivity(intent);
         }else if (view == carAnimation_button_id){
-            Intent intent = new Intent(getApplicationContext(),CarRootFindingMap.class);
+            Intent intent = new Intent(getApplicationContext(), CarRootFindingMap.class);
             startActivity(intent);
         }else if (view == custome_picker_button_id){
             Intent intent = new Intent(getApplicationContext(),CustomPlacePickerActivity.class);

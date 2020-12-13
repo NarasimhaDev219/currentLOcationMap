@@ -19,7 +19,7 @@
         android:theme="@style/Theme.CurrentLocationMap">
         <activity android:name=".PlacePicker.PlacePickerActivity"></activity>
         <activity android:name=".CustomePlacePicker.CustomPlacePickerActivity" />
-        <activity android:name=".CarRootFindingMap" />
+        <activity android:name=".RootFinding.CarRootFindingMap" />
         <activity android:name=".Services.ServicesClass" />
 
         <meta-data
@@ -29,8 +29,8 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".MapDirectionActivity" />
-        <activity android:name=".MyLocationClass" />
+        <activity android:name=".TwoLocationsDirections.MapDirectionActivity" />
+        <activity android:name=".CurrentLocation.MyLocationClass" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

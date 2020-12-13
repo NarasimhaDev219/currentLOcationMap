@@ -1,4 +1,4 @@
-package com.example.currentlocationmap;
+package com.example.currentlocationmap.TwoLocationsDirections;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -18,6 +18,7 @@ import com.directions.route.Route;
 import com.directions.route.RouteException;
 import com.directions.route.Routing;
 import com.directions.route.RoutingListener;
+import com.example.currentlocationmap.R;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.maps.CameraUpdate;
@@ -145,7 +146,7 @@ public class MapDirectionActivity extends FragmentActivity implements OnMapReady
     public void Findroutes(LatLng Start, LatLng End)
     {
         if(Start==null || End==null) {
-            Toast.makeText(com.example.currentlocationmap.MapDirectionActivity.this,"Unable to get location",Toast.LENGTH_LONG).show();
+            Toast.makeText(MapDirectionActivity.this,"Unable to get location",Toast.LENGTH_LONG).show();
         }
         else
         {
@@ -172,7 +173,7 @@ public class MapDirectionActivity extends FragmentActivity implements OnMapReady
 
     @Override
     public void onRoutingStart() {
-        Toast.makeText(com.example.currentlocationmap.MapDirectionActivity.this,"Finding Route...",Toast.LENGTH_LONG).show();
+        Toast.makeText(MapDirectionActivity.this,"Finding Route...",Toast.LENGTH_LONG).show();
     }
 
     //If Route finding success
